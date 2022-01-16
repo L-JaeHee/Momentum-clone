@@ -6,15 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Momentum</title>
   <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
 </head>
 <body>
-  <form action="" id="login-form" class="hidden">
-    <input type="text" maxlength="15" placeholder="What is your name?">
-    <button>Log In</button>
-  </form>
+  <header>
+    <div class="temperature">
+      <i class="fas fa-sun fa-2x"></i>
+      <span>27˚</span>
+    </div>
+  </header>
 
-  <h2 id="greeting" class="hidden">Good Day, <span></span></h2>
-  
+  <section class="main">
+    <h1 id="clock">00:00:00</h1>
+
+    <article class="greet">
+      <form action="" id="login-form" class="hidden">
+        <input type="text" maxlength="15" placeholder="What is your name?">
+        <button>Log In</button>
+      </form>
+      <h2 id="greeting" class="hidden">Good Day, <span></span></h2>
+    </article>
+
+    <article class="today">
+      <p>TODAY</p>
+      <form action="" id="todo-form">
+        <input type="text">
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </article>
+
+  </section>
+
+  <script src="js/clock.js"></script>
   <script src="js/greetings.js"></script>
 </body>
 </html>
