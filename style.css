@@ -13,6 +13,11 @@ header {
   margin: 20px;
 }
 
+.temperature {
+  display: block;
+  float: right;
+}
+
 .temperature span {
   font-size: 25px;
 }
@@ -36,6 +41,33 @@ article {
   text-align: center;
 }
 
+#login-form input {
+  height: 40px;
+  width: 200px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Nanum Myeongjo', serif;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid white;
+}
+
+#login-form input::placeholder {
+  font-size: 15px;
+  color: white;
+}
+
+#login-form button {
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Nanum Myeongjo', serif;
+  background-color: transparent;
+  border: none;
+}
+
 #greeting {
   margin-top: 5px;
   text-align: center;
@@ -57,4 +89,8 @@ article {
   color: white;
   margin-top: 90px;
   font-family: 'Nanum Myeongjo', serif;
+}
+
+#todo-form {
+  margin-top: 10px;
 }
