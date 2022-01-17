@@ -24,10 +24,19 @@
 
     <article class="greet">
       <form action="" id="login-form" class="hidden">
-        <input type="text" maxlength="15" placeholder="What is your name?" required>
+        <input type="text" class="input-username" maxlength="15" placeholder="What is your name?" required>
         <button>Log In</button>
       </form>
-      <h2 id="greeting" class="hidden">Good Day, <span></span></h2>
+
+      <div id="greeting" class="hidden">Good Day, 
+        <span></span>
+
+        <form action="" id="edit-form">
+          <input type="text" class="input-username hidden" maxlength="15" placeholder="Edit your name." required>
+        </form>
+
+        <i class="far fa-edit" id="edit-username"></i>
+      </div>
     </article>
 
     <article class="today">
@@ -43,10 +52,11 @@
 
   <footer>
     <div></div>
-    <div id="quote">명언란</div>
+    <div id="quote">" The way to get started is to quit talking and begin doing." - Walt Disney</div>
     <div></div>
   </footer>
 
+  <script src="js/quotes.js"></script>
   <script src="js/background.js"></script>
   <script src="js/clock.js"></script>
   <script src="js/greetings.js"></script>
