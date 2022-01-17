@@ -94,3 +94,15 @@ article {
 #todo-form {
   margin-top: 10px;
 }
+
+footer {
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-family: 'Nanum Myeongjo', serif;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+}
