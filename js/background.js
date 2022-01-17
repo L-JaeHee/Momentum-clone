@@ -1,8 +1,9 @@
-const bgImgs = ["0.jpg", "1.jpg", "2.jpg"];
-const todayBgImg = bgImgs[Math.floor(Math.random() * bgImgs.length)];
+const numberOfBgImg = 4;
+const todayBgImg = Math.floor(Math.random() * numberOfBgImg);
+console.log(todayBgImg);
 
 const backgroundImg = document.createElement("img");
-backgroundImg.classList.add("backgroundImg");
-backgroundImg.src = `src/${todayBgImg}`;
+backgroundImg.classList.add("bgImg");
+backgroundImg.src = `src/${todayBgImg}.jpg`;
 
 document.body.appendChild(backgroundImg);
