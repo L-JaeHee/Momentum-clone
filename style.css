@@ -118,6 +118,12 @@ article {
   margin-top: 10px;
 }
 
+#todo-list {
+  padding-top: 10px;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
 footer {
   margin-bottom: 20px;
   width: 100%;
