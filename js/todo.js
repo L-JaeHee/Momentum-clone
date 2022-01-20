@@ -5,17 +5,18 @@ const todoList = document.querySelector("#todo-list");
 todoForm.addEventListener("submit", handleToDoSubmit);
 
 function deleteToDo(event) {
-  const target = event.path[1];
-  target.remove();
+  event.path[1].remove();
 }
 
 function makingLi(input) {
   const li = document.createElement("li");
   li.innerText = input;
+
   const i = document.createElement("i");
   i.classList.add("far");
   i.classList.add("fa-trash-alt");
   i.addEventListener("click", deleteToDo);
+
   li.appendChild(i);
   todoList.appendChild(li);
 }
