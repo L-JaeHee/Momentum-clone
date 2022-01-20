@@ -124,6 +124,16 @@ article {
   list-style: none;
 }
 
+
+.fa-trash-alt {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.fa-trash-alt:hover {
+  color: rgb(250, 90, 90);
+}
+
 footer {
   margin-bottom: 20px;
   width: 100%;
