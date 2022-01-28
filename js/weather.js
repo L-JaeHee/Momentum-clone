@@ -1,8 +1,14 @@
-import { apiKey } from "./keys.js";
+import { API_KEY } from "./keys.js";
 
+const temperature = document.querySelector(".temperature span");
 
 function onGeoOk(position) {
-  console.log(position);
+  const lat = position.coords.latitude;
+  const lon = position.coords.longitude;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+  fetch(url).then(response => response.json()).then(data => {
+    temperature.innerText = String(Math.ceil(Number(data.main.temp))) + '˚C';
+  });
 }
 
 function onGeoError() {
@@ -11,4 +17,3 @@ function onGeoError() {
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 
-console.log(apiKey);
