@@ -23,6 +23,11 @@ header {
   font-size: 25px;
 }
 
+.temperature p {
+  font-size: 18px;
+  text-align: center;
+}
+
 #clock {
   text-align: center;
   font-size: 100px;
