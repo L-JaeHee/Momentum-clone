@@ -18,6 +18,10 @@ header {
   float: right;
 }
 
+.temperature div {
+  display: inline-block;
+}
+
 .temperature span {
   margin-left: 5px;
   font-size: 25px;
